@@ -1,7 +1,7 @@
 package learn.dsa.array.easy;
 
 /*
- * Leetcode : https://leetcode.com/problems/find-pivot-index/description/
+ * Leetcode - https://leetcode.com/problems/find-pivot-index/description/
  * 
  * Given an array of integers nums, calculate the pivot index of this array.
 

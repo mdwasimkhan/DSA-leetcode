@@ -2,6 +2,7 @@ package learn.dsa.array.easy;
 
 /*
  * Leetcode - https://leetcode.com/problems/find-pivot-index/description/
+ * Solution - leftSum = totalSum - rightSum - pivot. if leftSum == rightSum => leftSum = totalSum - leftSum(rightSum) - pivot => 2leftSum = totalSum - pivot 
  * 
  * Given an array of integers nums, calculate the pivot index of this array.
 

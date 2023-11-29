@@ -20,5 +20,31 @@ package learn.dsa.array.medium;
 	-1000 <= matrix[i][j] <= 1000
  */
 public class M_48_Rotate_Image {
+	// https://www.youtube.com/watch?v=Z0R2u6gd3GU
+    public void rotate(int[][] matrix) {
+        int n = matrix[0].length;
 
+        //Transpose
+        for(int i=0;i<n-1;i++){
+            for(int j=i+1;j<n;j++){
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
+            }
+        }
+
+        //Reverse
+        for(int i=0;i<n;i++){
+            int left = 0, right = n-1;
+            while (left < right) 
+                { 
+                    int temp = matrix[i][left];  
+                    matrix[i][left] = matrix[i][right]; 
+                    matrix[i][right] = temp; 
+                    left++; 
+                    right--; 
+                }  
+        }
+
+    }
 }

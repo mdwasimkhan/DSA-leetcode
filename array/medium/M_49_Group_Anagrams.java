@@ -32,6 +32,8 @@ import java.util.Map;
 public class M_49_Group_Anagrams {
 	public List<List<String>> groupAnagrams(String[] strs) {
 		//O(n * m)
+		// https://www.youtube.com/watch?v=NNBQik4phMI
+		// https://www.youtube.com/watch?v=0I6IL3TnIZs
 		Map<Map<Character, Integer>, List<String>> map = new HashMap<>();
 		List<List<String>> ans = new ArrayList<>();
 		for(String each : strs){
